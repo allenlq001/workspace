@@ -35,3 +35,14 @@ echo "path1/" >> .git/info/sparse-checkout
 echo "path2/" >> .git/info/sparse-checkout
 git pull --depth=1 origin master
 
+git remote -v
+
+git branch
+git branch -d <branch name to be delete>
+git push origin --delete <remote branch to be delete>
+git tag -d <tag to be delete>
+git push --delete origin <remote tag to be delete>
+git push origin :ref/tags/<remote tag to be delete>
+
+
+
