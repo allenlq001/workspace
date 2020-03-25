@@ -1,3 +1,8 @@
+git config user.name "your name" 
+git config --global user.name "your name"
+git config user.email "email@email.com"
+git config --global user.email "email@email.com"
+
 git push origin master
 git pull 
 git status
@@ -11,3 +16,22 @@ git revert --continue
 git revert --abort
 git rev-parse HEAD
 git reset HEAD@{2}
+
+git branch <new branch name>
+git checkout <new branch name>
+git checkout -b <new branch name>
+git branch -d <old branch name>
+
+git checkout master
+git merge develop
+git mergetool --tool=meld
+
+	
+git init <project>
+cd <project>
+git remote add origin ssh://<user>@<repository's url>
+git config core.sparsecheckout true
+echo "path1/" >> .git/info/sparse-checkout
+echo "path2/" >> .git/info/sparse-checkout
+git pull --depth=1 origin master
+
