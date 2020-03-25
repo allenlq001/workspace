@@ -1,0 +1,13 @@
+git push origin master
+git pull 
+git status
+git mergetool --tool=meld
+git log --maxcount=
+git reflog
+git checkout <hash>
+git reset --hard HEAD~2
+git revert <hash>
+git revert --continue
+git revert --abort
+git rev-parse HEAD
+git reset HEAD@{2}
