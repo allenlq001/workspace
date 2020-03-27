@@ -4,3 +4,40 @@
 - update-alternatives --install /usr/bin/python python /usr/bin/python3.5 2
 - update-alternatives --list python
 - update-alternatives --config python
+
+# change python source
+- pip install -i https://pypi.tuna.tsinghua.edu.cn/simple <python lib>
+- pip install -i http://pypi.douban.com/simple/ <python lib>
+
+# python install ignore timeout
+- sudo -H pip --default-timeout=100 install <python lib> 
+
+# change python source permanently
+1、创建一个隐藏目录名字是  .pip
+
+mkdir ~/.pip
+
+2、进入pip的目录创建一个pip.conf的文件
+
+cd .pip====》touch pip.conf
+
+3、编辑pip.conf文件
+
+[global]
+index-url = http://pypi.douban.com/simple
+[install]
+trusted-host = pypi.douban.com
+
+新版ubuntu要求使用https源，要注意。
+
+清华：https://pypi.tuna.tsinghua.edu.cn/simple
+
+阿里云：http://mirrors.aliyun.com/pypi/simple/
+
+中国科技大学 https://pypi.mirrors.ustc.edu.cn/simple/
+
+华中理工大学：http://pypi.hustunique.com/
+
+山东理工大学：http://pypi.sdutlinux.org/ 
+
+豆瓣：http://pypi.douban.com/simple/
