@@ -40,4 +40,14 @@ trusted-host = pypi.douban.com
 
 山东理工大学：http://pypi.sdutlinux.org/ 
 
+# convert ipynb to py 
+
+- jupyter nbconvert --to script <ipynb name>.ipynb 
+- ipython nbconvert --to script <ipynb name>.ipynb
 豆瓣：http://pypi.douban.com/simple/
+
+
+# conda 
+    conda activate envName
+    conda deactivate
+    conda create --name envName
